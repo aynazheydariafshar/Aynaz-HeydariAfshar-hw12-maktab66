@@ -1,9 +1,17 @@
 @import "variable";
 @import "mixin";
 @import "btn" ;
+@import "input";
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $font-type;
+}
+
+.container{
+    background-color: $bg-color-page;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 30px;
 }

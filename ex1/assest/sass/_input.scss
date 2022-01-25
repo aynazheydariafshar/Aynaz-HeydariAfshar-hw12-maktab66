@@ -1,0 +1,6 @@
+@import "variable";
+@import "mixin";
+
+input[type=text], select, textarea{
+    @include inputDivStyle();
+}

@@ -1,8 +1,21 @@
-@mixin btnStyle($color , $bg-color-btn) {
+@import "variable";
+@mixin btnStyle($color , $bg-color-btn , $font-size-btn) {
     background-color: $bg-color-btn;
     color: $color;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: $font-size-btn;
+}
+
+@mixin inputDivStyle() {
+    border: 1px solid  $bg-color-page ;
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }

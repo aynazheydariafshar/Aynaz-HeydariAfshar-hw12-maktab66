@@ -9,7 +9,7 @@ const lastName = document.querySelector("#inputLastName");
 const myFunction = e => {
     e.preventDefault();
     const felement = e.target;
-    let flag = true
+    let flag = true;
 
     const values = {};
     for(input of felement){
@@ -47,7 +47,7 @@ const myFunction = e => {
     }
     
     if(!flag){
-        return false
+        return false;
     }
 
     modal.style.display = "block";

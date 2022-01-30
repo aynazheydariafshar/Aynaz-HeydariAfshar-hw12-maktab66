@@ -1,7 +1,6 @@
-@mixin myFunc($x , $y , $pseudo : false){
-    @if $pseudo {
-        width: 100%;
-        padding-top: unquote( ( $y / $x ) * 100 + '%' );
-    }
+@mixin myFunc($x , $y , $pseudo : false)
+{
+    width: 100%;
+    padding-top: unquote( ( $y / $x ) * 100 + '%' );
 }
 

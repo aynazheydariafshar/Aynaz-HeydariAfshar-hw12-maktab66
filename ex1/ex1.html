@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assest/css/compile/index.css">
-    <title>ex1</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assest/css/compile/index.css">
+  <title>ex1</title>
 </head>
 <body>
-    <div class="container">
-        <form action="">
-          <label for="inputFirstName">First Name</label>
-          <input type="text" id="inputFirstName" name="firstname" placeholder="Your name..">
-          <p class="p-controlerror-f"></p>
-      
-          <label for="inputLastName">Last Name</label>
-          <input type="text" id="inputLastName" name="lastname" placeholder="Your last name..">
-          <p class="p-controlerror-l"></p>
-      
-          <label for="inputCountry">Country</label>
-          <select id="inputCountry" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
-      
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      
-          <input value="submit" onclick="myFunction(event)" id="btn-success" type="submit">
-        </form>
-    </div>    
+  <div class="container">
+    <form action="/action_page.php" onsubmit="return myFunction(event)" name="myForm" method="post">
+      <label for="inputFirstName">First Name</label>
+      <input type="text" id="inputFirstName" name="firstname" placeholder="Your name..">
+      <p class="p-controlerror-f"></p>
+  
+      <label for="inputLastName">Last Name</label>
+      <input type="text" id="inputLastName" name="lastname" placeholder="Your last name..">
+      <p class="p-controlerror-l"></p>
+  
+      <label for="inputCountry">Country</label>
+      <select id="inputCountry" name="country">
+        <option selected>Australia</option>
+        <option value="Canada">Canada</option>
+        <option value="USA">USA</option>
+      </select>
+  
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  
+      <button id="btn-success" type="submit">submit</button>
+    </form>
+  </div>    
 
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Your information was successfully registered!</p>
     </div>
-    <script src="./ex1.js"></script>  
+  </div>
+  <script src="./ex1.js"></script>  
 </body>
 </html>

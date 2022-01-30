@@ -1,0 +1,4 @@
+@import "mixin";
+div {
+    @include myFunc(20,12);
+}

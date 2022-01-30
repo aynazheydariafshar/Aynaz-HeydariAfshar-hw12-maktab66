@@ -1,0 +1,9 @@
+@mixin myFunc($x , $y , $pseudo : false){
+    padding-top: unquote( ( $y / $x ) * 100 + '%' );
+    @if $pseudo {
+        @include pseudo($pos: relative);
+        width: 100%;
+        padding-top: unquote( ( $y / $x ) * 100 + '%' );
+    }
+}
+
